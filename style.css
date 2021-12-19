@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-image: url('./imagens/2939797.jpg');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  color: #f7f76e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.principal {
+  display: flex;
+  height: 70%;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+}
+
+.codificar {
+  display: flex;
+  height: 70%;
+  width: 90%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.formulario {
+  display: flex;
+  height: 60%;
+  width: 95%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mensagem {
+  height: 90%;
+  width: 30%;
+  resize: none;
+}
+
+.codigo {
+  height: 90%;
+  width: 30%;
+  resize: none;
+}
+
+.butao {
+  background: #052f70;
+  background: linear-gradient(#7674b7, #50446c 50%, #7674b7);
+  border-radius: 18px;
+  width: 150px;
+  height: 53px;
+  color: #ffffff;
+  display: inline-block;
+  font: normal bold 20px/53px 'Open Sans', sans-serif;
+  text-align: center;
+  border: none;
+  font-family: 'Unica One', cursive;
+}
+
+.escolhas {
+  display: flex;
+  height: 10%;
+  width: 80%;
+  margin-left: 2%;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: -25px;
+  font-family: 'Staatliches', cursive;
+}
+
+.modo {
+  height: 25px;
+  width: 130px;
+  text-align: center;
+}
+
+label {
+  color: white;
+  font-size: 20px;
+}
+
+.passo {
+  font-size: 16px;
+  height: 25px;
+  width: 80px;
+  text-align: center;
+  resize: none;
+}
+
+footer {
+  height: 5%;
+  width: 100%;
+  color: wheat;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bolder;
+}
+.animationContent::after {
+  content: '';
+  animation: de 3s linear infinite;
+}
+@keyframes de {
+  0% {
+    content: '';
+  }
+  50% {
+    content: '';
+  }
+  60% {
+    content: 'DE';
+    color: #ff0000;
+  }
+}
+
+@media (max-width: 750px) {
+  body {
+    height: 100vh;
+  }
+  header {
+    height: 10%;
+    font-size: 14px;
+  }
+  .principal {
+    height: 500px;
+  }
+  .codificar {
+    height: 500px;
+  }
+  .formulario {
+    display: flex;
+    height: 400px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .mensagem {
+    height: 100px;
+    width: 200px;
+  }
+  .codigo {
+    height: 100px;
+    width: 200px;
+  }
+
+  .escolhas {
+    flex-direction: column;
+    height: 200px;
+    margin: auto;
+  }
+  footer {
+    display: none;
+  }
+}

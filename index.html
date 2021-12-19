@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="de animationContent"></h1>
+      <h1>CODIFIQUE</h1>
+    </header>
+    <div class="principal">
+      <section class="codificar">
+        <form class="formulario">
+          <textarea type="text" class="mensagem"></textarea>
+          <button class="butao" type="button"></button>
+          <textarea type="text" class="codigo"></textarea>
+        </form>
+        <div class="escolhas">
+          <select name="modo" class="modo">
+            <option value="nada" class="opcao1" disabled selected></option>
+            <option value="césar" class="opcao2">Cifra de César</option>
+            <option value="base64" class="opcao3">Base64</option>
+          </select>
+          <input type="radio" value="criptografar" name="radio" class="radio" />
+          <label> codificar </label>
+          <input
+            type="radio"
+            value="descriptografar"
+            name="radio"
+            class="radio"
+          />
+          <label> decodificar </label>
+          <textarea type="number" class="passo"></textarea>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <p>Project 1 © 2021 - Atividade didática</p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
